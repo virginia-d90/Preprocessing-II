@@ -181,6 +181,14 @@ img {
   align-items: center;
   padding: 1% 0;
 }
+@media (max-width:500px) {
+  .navigation .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navigation a {
   text-decoration: none;
   color: #212529;

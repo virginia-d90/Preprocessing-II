@@ -8,13 +8,15 @@
     .container{
         .custom_layout(row, space-between, center);
         padding: 1% 0;
-    }
+        @media @mobile;{
+            .custom_layout(column, center, center);
+        }//closes @media
+    }//closes .container
     a{
         text-decoration: none;
         color: @font-color;
         padding: 20px;
         
     }
-    
-    
+ 
 }//closes .navigation
