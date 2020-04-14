@@ -1,7 +1,24 @@
 // Mixins in here
-.custom_layout(@direction:row,@justify:space-between,@align:center){
+.custom_layout(@direction,@justify,@align:center){
     display:flex;
     flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
+
+.border_dash(@width:100%){
+    width: @width;
+    border-bottom: 2px dashed silver;
+}
+
+.custom_btn(@size:175px){
+    background-color: @button-bg;
+    width: @size;
+    height: 45px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    color:@white;
+    
+  }
